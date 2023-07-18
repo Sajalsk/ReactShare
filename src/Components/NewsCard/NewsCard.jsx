@@ -10,14 +10,6 @@ const NewsCard = () => {
   const postUrl = 'https://aaratechnologies.com/';
   const author = 'Times of India';
 
-
-  <Helmet>
-  <meta property="og:title" content={postTitle} />
-  <meta property="og:description" content={postDescription} />
-  <meta property="og:image" content={postImageUrl} />
-  <meta property="og:url" content={postUrl} />
-</Helmet>
-
   // const url = 'https://aaratechnologies.com/'; // Replace with the URL of your blog or page
   // const title = 'AARA Solutions'; // Replace with the title of your blog or page
   // const description = 'Check out this Company!'; // Replace with the description of your blog or page
@@ -25,8 +17,13 @@ const NewsCard = () => {
   // const author = "Times of India";
 
   return (
-
-   
+    <>
+      <Helmet>
+  <meta property="og:title" content={postTitle} />
+  <meta property="og:description" content={postDescription} />
+  <meta property="og:image" content={postImageUrl} />
+  <meta property="og:url" content={postUrl} />
+</Helmet>
 
       <div style={{marginLeft:"600px", marginTop:"100px"}} >
       <div className="card text-center" style={{ width: "18rem" }}>
@@ -58,7 +55,7 @@ const NewsCard = () => {
       <Share url={postUrl} title={postTitle} description={postDescription} imageUrl={postImageUrl} />
       </div>
   </div>
-   
+  </>
   );
 };
 
