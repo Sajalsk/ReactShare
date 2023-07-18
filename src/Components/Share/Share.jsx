@@ -8,26 +8,26 @@ const Share = () => {
   <>
   <div className="share text-center" style={{marginTop:"15px" , marginLeft:"-50px"}}>
    
-    <div className="logo pd-4">
+    <div className="logo ">
    <FacebookShareButton 
    url={currPageURl}
    quote="Share this News"
    hashtag="#Breaking">
-   <FacebookIcon/>
+   <FacebookIcon size={40}/>
    </FacebookShareButton>
 
    <TwitterShareButton
    url={currPageURl}
    quote="Share this News"
    hashtag="#Breaking">
-    <TwitterIcon/>
+    <TwitterIcon size={40}/>
    </TwitterShareButton>
 
    <WhatsappShareButton
    url={currPageURl}
    quote="Share this News"
    hashtag="#Breaking">
-    <WhatsappIcon/>
+    <WhatsappIcon size={40}/>
    </WhatsappShareButton>
    </div>
 

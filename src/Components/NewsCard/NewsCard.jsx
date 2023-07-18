@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Share from "../Share/Share";
-
 import { Helmet } from 'react-helmet';
 
 const NewsCard = () => {
@@ -16,26 +15,21 @@ const NewsCard = () => {
   // const imageUrl = 'https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_01/2705191/nbc-social-default.png'; // Replace with the URL of the image associated with your blog or page
   // const author = "Times of India";
 
-  return (
-    <>
-      <Helmet>
+  useEffect=()=>{
+    <Helmet>
   <meta property="og:title" content={postTitle} />
   <meta property="og:description" content={postDescription} />
   <meta property="og:image" content={postImageUrl} />
   <meta property="og:url" content={postUrl} />
 </Helmet>
 
+  }
+  return (
+    <>
+     
       <div style={{marginLeft:"600px", marginTop:"100px"}} >
       <div className="card text-center" style={{ width: "18rem" }}>
-        <img
-          src={
-            !postImageUrl
-              ? "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_01/2705191/nbc-social-default.png"
-              : postImageUrl
-          }
-          className="card-img-top"
-          alt="..."
-        />
+        <img src={ postImageUrl}className="card-img-top"alt="..."/>
         <div className="card-body">
           <h5 className="card-title">{postTitle} </h5>
           <p className="card-text">{postDescription}</p>
