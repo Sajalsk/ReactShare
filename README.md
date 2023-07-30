@@ -1,3 +1,5 @@
+![Screenshot 2023-07-30 233822](https://github.com/Sajalsk/ReactShare/assets/86351716/e543e3b6-cd23-410a-b820-b0ec378f302e)
+![Screenshot 2023-07-30 233929](https://github.com/Sajalsk/ReactShare/assets/86351716/d61059e7-77f9-489f-98f5-8e2f1e568140)
 
 
 # Getting Started with Create React App
